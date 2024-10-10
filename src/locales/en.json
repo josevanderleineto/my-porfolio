@@ -1,0 +1,7 @@
+{
+  "welcome": "Welcome to our website",
+  "description": "This is a simple internationalized React app.",
+  "home": "Home",
+  "about": "About",
+  "contact": "Contact"
+}

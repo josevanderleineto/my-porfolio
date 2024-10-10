@@ -1,0 +1,21 @@
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+  }
+  
+  img {
+    max-width: 100%; /* Garante que as imagens sejam responsivas */
+    height: auto;
+  }
+  
+  ul {
+    list-style: none; /* Remove os marcadores de lista */
+  }
+  
