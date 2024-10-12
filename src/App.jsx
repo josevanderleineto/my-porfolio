@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Header from './components/Header';
+import Home from './components/Home';
 import './assets/reset.css';
 
 function App() {
@@ -12,8 +13,7 @@ function App() {
   return (
     <div>
       <Header changeLanguage={changeLanguage} />
-      <h1>{t('welcome')}</h1>
-      <p>{t('description')}</p>
+       <Home>{t('home')}</Home>
     </div>
   );
 }

@@ -29,13 +29,14 @@ const Header = () => {
         <li onClick={() => console.log('Navigate to Home')}>{t('home')}</li>
         <li onClick={() => console.log('Navigate to About')}>{t('about')}</li>
         <li onClick={() => console.log('Navigate to Contact')}>{t('contact')}</li>
-      </Menu>
-      <LanguageButton onClick={toggleLanguage}>
+        <LanguageButton onClick={toggleLanguage}>
         <img
           src={i18n.language === 'en' ? brFlag : ukFlag}
           alt={i18n.language === 'en' ? 'Português' : 'English'}
         />
       </LanguageButton>
+      </Menu>
+      
     </Nav>
   );
 };
@@ -78,6 +79,8 @@ const LanguageButton = styled.button`
     width: 30px;
     height: auto;
   }
+
+  
 `;
 
 const Menu = styled.ul`
