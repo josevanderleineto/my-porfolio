@@ -1,7 +1,13 @@
 {
-  "title": "Welcome to our website",
-  "text": "This is a simple internationalized React app.",
+  
   "home": "Home",
   "about": "About",
-  "contact": "Contact"
+  "contact": "Contact",
+  "titleHome": "Vanderlei Neto",
+  "subTitleHome": "Web Developer",
+  "resume": "https://drive.google.com/file/d/1",
+  "textHome": "I'm a Front-End developer, creating websites for businesses, teachers, and researchers, transforming ideas into digital solutions that capture attention and deliver value.",
+  "cv": "https://github.com/josevanderleineto.png"
+
+
 }
