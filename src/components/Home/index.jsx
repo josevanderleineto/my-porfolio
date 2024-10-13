@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import  cv from '../../assets/cv.png';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -13,6 +12,8 @@ const Home = () => {
             <Text>
                 <p>{t('textHome')}</p>
             </Text>
+            <Button>{t('cv')}</Button>
+
 
         </Section>
     );
@@ -22,9 +23,7 @@ const Section = styled.section`
     align-items: center;
     flex-direction: column;
     background-color: #06415A;
-    padding-top: 50px;
-    box-sizing: border-box;
-    width: 100%;
+    padding-top: 100px;
     height: 100vh;
 
     
@@ -44,20 +43,43 @@ const SubTitle = styled.h2`
     `;
 
 const Profile = styled.img`
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     `;
-
-
-const Text = styled.div`
+ const Text = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 80%;
     font-size: 1.5rem;
     color: white;
+    margin: 20px auto; /* centraliza o componente Text na tela */
+    text-align: justify; /* justifica o texto */
+    text-justify: inter-word; /* ajusta o espaçamento entre palavras para justificar melhor */
+    `;
+
+
+
+const Button = styled.button`
+    justify-content: center;
+    background-color:  #12123c;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
     margin-top: 20px;
-`;
+    width: 200px;
+    &:hover {
+        background-color: #22123c;
+        transition: background-color 0.3s ease;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    `    
 
 
 export default Home;
