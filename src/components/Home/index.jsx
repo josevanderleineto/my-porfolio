@@ -57,7 +57,7 @@ const Profile = styled.img`
     color: white;
     margin: 20px auto; /* centraliza o componente Text na tela */
     text-align: justify; /* justifica o texto */
-    text-justify: inter-word; /* ajusta o espaçamento entre palavras para justificar melhor */
+    text-justify: inter-word;
     `;
 
 
