@@ -45,7 +45,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #12123c;
+  background-color: var(--bg-secondary);
   width: 100%;
   padding: 10px 20px;
   box-sizing: border-box;
@@ -56,6 +56,8 @@ const Logo = styled.h1`
   color: white;
   margin: 0;
   margin-right: auto;
+  color: var(--color-text)
+
 `;
 
 const MenuIcon = styled.div`
@@ -91,13 +93,14 @@ const Menu = styled.ul`
   flex-direction: row;
   align-items: center;
 
+
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    background-color: #12123c;
+    height: 300px;
+    background-color: var(--bg-secondary);
     width: 200px;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
@@ -113,6 +116,8 @@ const Menu = styled.ul`
     color: white;
     cursor: pointer;
     text-align: left;
+    color: var(--color-text)
+
   }
 `;
 

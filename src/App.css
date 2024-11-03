@@ -1,0 +1,14 @@
+:root {
+    --bg-primary: #06415A; /* Cor escura */
+    --bg-secondary: #12123c; /* Cor escura */
+    --bg-secondary-hover: #1a1a56; /* Cor escura */
+    --color-text: #ffffff; /* Texto claro */
+  }
+  
+  /* Modo claro */
+  .light {
+    --bg-primary: #e0f7fa; /* Azul claro */
+    --bg-secondary: #bceef5; /* Cinza muito claro */
+    --bg-secondary-hover: #d1d5db; /* Cinza claro */
+    --color-text: #000000; /* Texto escuro */
+  }

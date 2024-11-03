@@ -13,8 +13,6 @@ const Home = () => {
                 <p>{t('textHome')}</p>
             </Text>
             <Button>{t('cv')}</Button>
-
-
         </Section>
     );
 }
@@ -22,7 +20,7 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #06415A;
+    background-color: var(--bg-primary);
     padding-top: 100px;
     height: 100vh;
 
@@ -30,14 +28,14 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-    color: white;
+    color: var(--color-text);
     font-size: 32px;
     margin-bottom: 20px;
     `;
 
 
 const SubTitle = styled.h2`
-    color: white;
+    color: var(--color-text);
     font-size: 24px;
     margin-bottom: 20px;
     `;
@@ -54,26 +52,27 @@ const Profile = styled.img`
     flex-direction: column;
     width: 80%;
     font-size: 1.5rem;
-    color: white;
-    margin: 20px auto; /* centraliza o componente Text na tela */
-    text-align: justify; /* justifica o texto */
+    color: var(--color-text);
+    margin: 20px auto; 
+    text-align: justify; 
     text-justify: inter-word;
+
     `;
 
 
 
 const Button = styled.button`
     justify-content: center;
-    background-color:  #12123c;
+    background-color:  var(--bg-secondary);
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    color: white;
+    color: var(--color-text);
     padding: 10px 20px;
     margin-top: 20px;
     width: 200px;
     &:hover {
-        background-color: #22123c;
+        background-color: var(--bg-secondary-hover);
         transition: background-color 0.3s ease;
         font-size: 1rem;
         font-weight: bold;

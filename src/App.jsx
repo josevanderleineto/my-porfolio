@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import Header from './components/Header';
 import Home from './components/Home';
 import './assets/reset.css';
-
+import './App.css';
 function App() {
   const { t, i18n } = useTranslation();
 
@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className=''>
       <Header changeLanguage={changeLanguage} />
        <Home>{t('home')}</Home>
     </div>
