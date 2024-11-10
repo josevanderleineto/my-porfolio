@@ -7,7 +7,10 @@
   "subTitleHome": "Web Developer",
   "resume": "https://drive.google.com/file/d/1",
   "textHome": "I'm a web developer creating websites for businesses and individuals. I transform ideas into digital solutions that grab attention and provide value.",
-  "cv": "Resume"
+  "cv": "Resume",
 
+"titleAbout": "About Me",
+"textAbout": "I am a Web developer with a passion for creating engaging and intuitive digital experiences. With over 3 years of experience, I specialise in building modern and responsive interfaces using technologies such as HTML, CSS, JavaScript, React, and Angular. In addition to developing websites for businesses, educators, and researchers, I am dedicated to turning ideas into digital solutions that capture attention and deliver value.",
+"textAbout2": "With over 3 years of experience in web development, I have had the opportunity to collaborate with various companies, educators, and researchers, helping them to transform their ideas into robust and functional digital solutions. One of my standout projects is the Author Notation Generator, where I used the Cutter table as a basis. I am currently developing a similar application using PHA tables with JavaScript, aiming to optimise processes and offer innovative solutions in the field of Library Science."
 
 }

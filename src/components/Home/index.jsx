@@ -5,12 +5,12 @@ const Home = () => {
     const { t } = useTranslation();
 
     return (
-        <Section>
+        <Section id='home'>
             <Title>{t('titleHome')}</Title>
             <SubTitle>{t('subTitleHome')}</SubTitle>
             <Profile src='https://github.com/josevanderleineto.png' alt="Home" />
             <Text>
-                <p>{t('textHome')}</p>
+                {t('textHome')}
             </Text>
             <Button>{t('cv')}</Button>
         </Section>
@@ -77,6 +77,8 @@ const Button = styled.button`
         font-size: 1rem;
         font-weight: bold;
     }
+
+  
 
     `    
 

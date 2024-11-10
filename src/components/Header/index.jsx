@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import brFlag from '../../assets/flags/br.png'; // Imagem da bandeira do Brasil
-import ukFlag from '../../assets/flags/uk.png'; // Imagem da bandeira do Reino Unido
+import brFlag from '../../assets/flags/br.png';
+import ukFlag from '../../assets/flags/uk.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next'; // Importa o hook de tradução
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -26,17 +25,22 @@ const Header = () => {
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </MenuIcon>
       <Menu className={isMenuOpen ? 'active' : ''}>
-        <li onClick={() => console.log('Navigate to Home')}>{t('home')}</li>
-        <li onClick={() => console.log('Navigate to About')}>{t('about')}</li>
-        <li onClick={() => console.log('Navigate to Contact')}>{t('contact')}</li>
+        <li>
+          <StyledAnchor href="#home">{t('home')}</StyledAnchor>
+        </li>
+        <li>
+          <StyledAnchor href="#about">{t('about')}</StyledAnchor>
+        </li>
+        <li>
+          <StyledAnchor href="#contact">{t('contact')}</StyledAnchor>
+        </li>
         <LanguageButton onClick={toggleLanguage}>
-        <img
-          src={i18n.language === 'en' ? brFlag : ukFlag}
-          alt={i18n.language === 'en' ? 'Português' : 'English'}
-        />
-      </LanguageButton>
+          <img
+            src={i18n.language === 'en' ? brFlag : ukFlag}
+            alt={i18n.language === 'en' ? 'Português' : 'English'}
+          />
+        </LanguageButton>
       </Menu>
-      
     </Nav>
   );
 };
@@ -48,16 +52,13 @@ const Nav = styled.nav`
   background-color: var(--bg-secondary);
   width: 100%;
   padding: 10px 20px;
-  box-sizing: border-box;
   position: relative;
 `;
 
 const Logo = styled.h1`
-  color: white;
+  color: var(--color-text);
   margin: 0;
   margin-right: auto;
-  color: var(--color-text)
-
 `;
 
 const MenuIcon = styled.div`
@@ -81,8 +82,6 @@ const LanguageButton = styled.button`
     width: 30px;
     height: auto;
   }
-
-  
 `;
 
 const Menu = styled.ul`
@@ -92,7 +91,6 @@ const Menu = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
-
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -113,16 +111,18 @@ const Menu = styled.ul`
 
   li {
     padding: 20px;
-    color: white;
-    cursor: pointer;
     text-align: left;
-    color: var(--color-text)
-
   }
 `;
 
-Header.propTypes = {
-  changeLanguage: PropTypes.func.isRequired,
-};
+const StyledAnchor = styled.a`
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-hover);
+  }
+`;
 
 export default Header;
