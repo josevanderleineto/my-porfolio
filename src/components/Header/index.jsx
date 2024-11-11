@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import brFlag from '../../assets/flags/br.png';
 import ukFlag from '../../assets/flags/uk.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import logo from '../../../public/Logo_Vanderlei.svg';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -18,13 +19,27 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Fechar o menu ao clicar fora ou no ícone de "X"
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMenuOpen && !event.target.closest('.menu, .menu-icon')) {
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   return (
     <Nav>
-      <Logo>VN</Logo>
-      <MenuIcon onClick={toggleMenu}>
+      <Logo src={logo}></Logo>
+      <MenuIcon onClick={toggleMenu} className="menu-icon">
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </MenuIcon>
-      <Menu className={isMenuOpen ? 'active' : ''}>
+      <Menu className={`menu ${isMenuOpen ? 'active' : ''}`}>
+        
         <li>
           <StyledAnchor href="#home">{t('home')}</StyledAnchor>
         </li>
@@ -55,11 +70,14 @@ const Nav = styled.nav`
   position: relative;
 `;
 
-const Logo = styled.h1`
-  color: var(--color-text);
+const Logo = styled.img`
+  width: 90px;
   margin: 0;
   margin-right: auto;
 `;
+
+
+
 
 const MenuIcon = styled.div`
   color: white;

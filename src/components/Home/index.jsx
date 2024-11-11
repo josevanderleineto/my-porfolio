@@ -20,7 +20,6 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--bg-primary);
     padding-top: 100px;
     height: 100vh;
 
@@ -31,6 +30,10 @@ const Title = styled.h1`
     color: var(--color-text);
     font-size: 32px;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 27px;
+    }
     `;
 
 
@@ -38,14 +41,22 @@ const SubTitle = styled.h2`
     color: var(--color-text);
     font-size: 24px;
     margin-bottom: 20px;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
     `;
 
 const Profile = styled.img`
     width: 150px;
     height: 150px;
     border-radius: 50%;
+
+    @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+    }
     `;
- const Text = styled.div`
+ const Text = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +67,10 @@ const Profile = styled.img`
     margin: 20px auto; 
     text-align: justify; 
     text-justify: inter-word;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 
     `;
 

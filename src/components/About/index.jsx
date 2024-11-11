@@ -16,21 +16,39 @@ const About = () => {
 
 }
 
-const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    `
-
 const Title = styled.h1`
     font-size: 32px;
     margin-top: 40px;
     margin-bottom: 20px;
 `;
 
+const Section = styled.section`
+    padding: 40px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+    `
 
-const Paragraph = styled.p``;
+
+
+
+const Paragraph = styled.p`
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin: 20px auto;
+    padding:  0 70px 0 70px;
+
+    @media (max-width: 768px) {
+        padding: 0 20px 0 20px;
+        font-size: 1rem;
+    }
+`;
+
+
 
 
 export default About;
