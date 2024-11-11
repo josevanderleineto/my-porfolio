@@ -4,7 +4,6 @@ import brFlag from '../../assets/flags/br.png';
 import ukFlag from '../../assets/flags/uk.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import logo from '../../../public/Logo_Vanderlei.svg';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -34,7 +33,7 @@ const Header = () => {
 
   return (
     <Nav>
-      <Logo src={logo}></Logo>
+      <Logo src='/Logo_Vanderlei.svg'></Logo>
       <MenuIcon onClick={toggleMenu} className="menu-icon">
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </MenuIcon>
@@ -66,12 +65,14 @@ const Nav = styled.nav`
   align-items: center;
   background-color: var(--bg-secondary);
   width: 100%;
+  height: 80px;
   padding: 10px 20px;
   position: relative;
+
 `;
 
 const Logo = styled.img`
-  width: 90px;
+  width: 130px;
   margin: 0;
   margin-right: auto;
 `;
@@ -152,6 +153,7 @@ const StyledAnchor = styled.a`
   color: var(--color-text);
   cursor: pointer;
   font-size: 1.3rem;
+  
 
   &:hover {
     color: var(--color-hover);

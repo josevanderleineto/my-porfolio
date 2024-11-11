@@ -11,7 +11,10 @@ const Home = () => {
             <Title>{t('titleHome')}</Title>
             <SubTitle>{t('subTitleHome')}</SubTitle>
             <Profile src='https://github.com/josevanderleineto.png' alt="Home" />
-            <Button>{t('cv')}</Button>
+            <Text>
+                {t('textHome')}
+            </Text>
+            <a href='$'><Button>{t('cv')}</Button></a>
             <SocialIcon>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />
@@ -23,9 +26,6 @@ const Home = () => {
                     <FaSquareInstagram />
                 </a>
             </SocialIcon>
-            <Text>
-                {t('textHome')}
-            </Text>
         </Section>
     );
 }
@@ -40,11 +40,11 @@ const Section = styled.section`
 
 const Title = styled.h1`
     color: var(--color-text);
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 20px;
 
     @media (max-width: 768px) {
-        font-size: 27px;
+        font-size: 35px;
     }
 `;
 
@@ -59,10 +59,10 @@ const SubTitle = styled.h2`
 
 const SocialIcon = styled.div`
     display: flex;
-    gap: 20px; /* Adiciona espaço entre os ícones */
+    gap: 35px; /* Adiciona espaço entre os ícones */
     color: var(--color-text);
     font-size: 40px;
-    margin: 10px 0;
+    margin: 40px 0;
 
     a {
         color: inherit;
