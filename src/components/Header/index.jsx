@@ -41,7 +41,7 @@ const Header = () => {
       <Menu className={`menu ${isMenuOpen ? 'active' : ''}`}>
         
         <li>
-          <StyledAnchor href="#home">{t('home')}</StyledAnchor>
+          <StyledAnchor href="/">{t('home')}</StyledAnchor>
         </li>
         <li>
           <StyledAnchor href="#about">{t('about')}</StyledAnchor>
@@ -110,6 +110,10 @@ const Menu = styled.ul`
   flex-direction: row;
   align-items: center;
 
+  
+
+  
+
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
@@ -130,6 +134,16 @@ const Menu = styled.ul`
   li {
     padding: 20px;
     text-align: left;
+
+
+  }
+
+ 
+  @media (max-width: 768px) {
+    li {
+  
+      font-size: 1.2rem;
+    }
   }
 `;
 
@@ -137,9 +151,19 @@ const StyledAnchor = styled.a`
   text-decoration: none;
   color: var(--color-text);
   cursor: pointer;
+  font-size: 1.3rem;
 
   &:hover {
     color: var(--color-hover);
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      
+    }
+
   }
 `;
 

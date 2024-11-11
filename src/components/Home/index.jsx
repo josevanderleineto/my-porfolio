@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -9,21 +11,31 @@ const Home = () => {
             <Title>{t('titleHome')}</Title>
             <SubTitle>{t('subTitleHome')}</SubTitle>
             <Profile src='https://github.com/josevanderleineto.png' alt="Home" />
+            <Button>{t('cv')}</Button>
+            <SocialIcon>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin />
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <FaSquareInstagram />
+                </a>
+            </SocialIcon>
             <Text>
                 {t('textHome')}
             </Text>
-            <Button>{t('cv')}</Button>
         </Section>
     );
 }
+
 const Section = styled.section` 
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 100px;
     height: 100vh;
-
-    
 `;
 
 const Title = styled.h1`
@@ -34,8 +46,7 @@ const Title = styled.h1`
     @media (max-width: 768px) {
         font-size: 27px;
     }
-    `;
-
+`;
 
 const SubTitle = styled.h2`
     color: var(--color-text);
@@ -44,7 +55,28 @@ const SubTitle = styled.h2`
     @media (max-width: 768px) {
         font-size: 18px;
     }
-    `;
+`;
+
+const SocialIcon = styled.div`
+    display: flex;
+    gap: 20px; /* Adiciona espaço entre os ícones */
+    color: var(--color-text);
+    font-size: 40px;
+    margin: 10px 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--bg-secondary-hover); /* Ajuste a cor conforme desejado para o hover */
+        }
+    }
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+`;
 
 const Profile = styled.img`
     width: 150px;
@@ -55,8 +87,9 @@ const Profile = styled.img`
         width: 100px;
         height: 100px;
     }
-    `;
- const Text = styled.p`
+`;
+
+const Text = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,14 +104,11 @@ const Profile = styled.img`
     @media (max-width: 768px) {
         font-size: 1rem;
     }
-
-    `;
-
-
+`;
 
 const Button = styled.button`
     justify-content: center;
-    background-color:  var(--bg-secondary);
+    background-color: var(--bg-secondary);
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -92,10 +122,6 @@ const Button = styled.button`
         font-size: 1rem;
         font-weight: bold;
     }
-
-  
-
-    `    
-
+`;
 
 export default Home;
