@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <Nav>
-      <Logo src='/Logo_Vanderlei.svg'></Logo>
+      <Logo src='/logotipo.png'></Logo>
       <MenuIcon onClick={toggleMenu} className="menu-icon">
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </MenuIcon>
@@ -72,7 +72,7 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.img`
-  width: 130px;
+  width: 50px;
   margin: 0;
   margin-right: auto;
 `;
