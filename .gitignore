@@ -10,9 +10,6 @@ lerna-debug.log*
 # Dependency directories
 node_modules/
 dist/
-dist-ssr/
-.next/
-out/
 
 # Environment variables
 .env
@@ -45,3 +42,6 @@ $RECYCLE.BIN/
 # Other
 .obsidian/
 .history/
+
+# Vite
+.vite/

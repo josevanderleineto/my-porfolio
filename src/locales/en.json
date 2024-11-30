@@ -2,6 +2,7 @@
   
   "home": "Home",
   "about": "About",
+  "skill": "Skills",
   "contact": "Contact",
   "titleHome": "Vanderlei Neto",
   "subTitleHome": "Web Developer",
@@ -10,7 +11,65 @@
   "cv": "Resume",
 
 "titleAbout": "About Me",
-"textAbout": "I am a Web developer with a passion for creating engaging and intuitive digital experiences. With over 3 years of experience, I specialise in building modern and responsive interfaces using technologies such as HTML, CSS, JavaScript, React, and Angular. In addition to developing websites for businesses, educators, and researchers, I am dedicated to turning ideas into digital solutions that capture attention and deliver value.",
-"textAbout2": "With over 3 years of experience in web development, I have had the opportunity to collaborate with various companies, educators, and researchers, helping them to transform their ideas into robust and functional digital solutions. One of my standout projects is the Author Notation Generator, where I used the Cutter table as a basis. I am currently developing a similar application using PHA tables with JavaScript, aiming to optimise processes and offer innovative solutions in the field of Library Science."
+"aboutDetails": [
+  {
+    "textAbout": "I am a Web developer with a passion for creating engaging and intuitive digital experiences. With over 3 years of experience, I specialise in building modern and responsive interfaces using technologies such as HTML, CSS, JavaScript, React, and Angular. In addition to developing websites for businesses, educators, and researchers, I am dedicated to turning ideas into digital solutions that capture attention and deliver value."
+  },
+  {
+    "textAbout": "With over 3 years of experience in web development, I have had the opportunity to collaborate with various companies, educators, and researchers, helping them to transform their ideas into robust and functional digital solutions. One of my standout projects is the Author Notation Generator, where I used the Cutter table as a basis. I am currently developing a similar application using PHA tables with JavaScript, aiming to optimise processes and offer innovative solutions in the field of Library Science."
+  }
+],
+
+"subTitle": "Serviços",
+"services": [
+  {
+    "title": "Web Development",
+    "text": "I create modern and responsive websites using technologies such as HTML, CSS, JavaScript, React, and Angular."
+  },
+  {
+    "title": "Web Design",
+    "text": "I design engaging and intuitive interfaces that capture attention and deliver value."
+  },
+  {
+    "title": "Consulting",
+    "text": "I provide expert advice on web development and design, helping you to achieve your digital goals."
+  }
+],
+
+"skills": {
+  "title": "Skills",
+  "items": [
+    {
+      "text": "HTML5"
+    },
+    {
+      "text": "CSS3"
+    },
+    {
+      "text": "JavaScript"
+    },
+    {
+      "text": "React"
+    },
+    {
+      "text": "Angular"
+    },
+    {
+      "text": "Node.js"
+    },
+    {
+      "text": "MongoDB"
+    }
+  ]
+},
+
+"experience": {
+  "title": "Experience",
+  "text": "Com mais de 3 anos de experiência em desenvolvimento web, trabalhando com diversos clientes e projetos."
+},
+"education": {
+  "title": "Education",
+  "text": "Sou formado em Ciência da Computação pela Universidade de São Paulo, com especialização em desenvolvimento e design web."
+}
 
 }

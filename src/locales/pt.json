@@ -1,17 +1,95 @@
 {
-  
   "home": "Início",
   "about": "Sobre",
+  "skill": "Skills",
   "contact": "Contato",
   "titleHome": "Vanderlei Neto",
   "subTitleHome": "Desenvolvedor Web",
   "resume": "https://drive.google.com/file/d/1",
-  "textHome": "Sou um desenvolvedor web que cria sites para empresas e pessoas. Transformo ideias em soluções digitais que chamam a atenção e entregam valor.",
+  "textHome": "Sou um desenvolvedor web criando sites para empresas e indivíduos. Transformo ideias em soluções digitais que chamam a atenção e proporcionam valor.",
   "cv": "Currículo",
 
-  "titleAbout": "About Me",
-  "textAbout": "Sou um desenvolvedor  Web com uma paixão por criar experiências digitais envolventes e intuitivas. Com mais de 3 anos de experiência, especializo-me em construir interfaces modernas e responsivas utilizando tecnologias como HTML, CSS, JavaScript, React, e Angular. Além de desenvolver sites para empresas, professores, e pesquisadores, sou dedicado a transformar ideias em soluções digitais que captam a atenção e entregam valor.",
-  "textAbout2": "Com mais de 3 anos de experiência no desenvolvimento web, já tive a oportunidade de colaborar com diversas empresas, professores e pesquisadores, ajudando-os a transformar suas ideias em soluções digitais robustas e funcionais. Um dos meus projetos de destaque é o Gerador de Notação de Autor, onde utilizei a tabela Cutter como base. Atualmente, estou desenvolvendo uma aplicação semelhante usando tabelas PHA com JavaScript, visando otimizar processos e oferecer soluções inovadoras no campo da Biblioteconomia."
+  "titleAbout": "Sobre Mim",
+  "aboutDetails": [
+    {
+      "textAbout": "Sou um desenvolvedor web apaixonado por criar experiências digitais envolventes e intuitivas. Com mais de 3 anos de experiência, sou especializado em construir interfaces modernas e responsivas utilizando tecnologias como HTML, CSS, JavaScript, React e Angular. Além de desenvolver sites para empresas, educadores e pesquisadores, sou dedicado a transformar ideias em soluções digitais que capturam atenção e entregam valor."
+    },
+    {
+      "textAbout": "Com mais de 3 anos de experiência em desenvolvimento web, tive a oportunidade de colaborar com diversas empresas, educadores e pesquisadores, ajudando-os a transformar suas ideias em soluções digitais robustas e funcionais. Um dos meus projetos de destaque é o Gerador de Notação de Autor, onde usei a tabela Cutter como base. Atualmente, estou desenvolvendo uma aplicação semelhante utilizando tabelas PHA com JavaScript, visando otimizar processos e oferecer soluções inovadoras no campo da Biblioteconomia."
+    }
+  ],
+
+  "subTitle": "Serviços",
+  "services": [
+    {
+      "title": "Desenvolvimento Web",
+      "text": "Crio sites modernos e responsivos utilizando tecnologias como HTML, CSS, JavaScript, React e Angular."
+    },
+    {
+      "title": "Design de Sites",
+      "text": "Crio interfaces envolventes e intuitivas que chamam a atenção e proporcionam valor."
+    },
+    {
+      "title": "Consultoria",
+      "text": "Ofereço consultoria especializada em desenvolvimento e design de sites, ajudando você a atingir seus objetivos digitais."
+    },
+
+    {
+      "titleSkills": "Habilidades",
+      "skills": [
+        {
+          "text": "Tenho uma sólida base em desenvolvimento web e design."
+        },
+        {
+          "text": "Especializado em tecnologias como HTML, CSS, JavaScript, React e Angular."
+        }
+      ],
+      "titleExperience": "Experiência",
+      "experience": "Tenho mais de 3 anos de experiência em desenvolvimento web, trabalhando com diversos clientes e projetos.",
+      "titleEducation": "Educação",
+      "education": "Sou formado em Ciência da Computação pela Universidade de São Paulo, com especialização em desenvolvimento e design web."
+    }
+    
+  ],
 
 
+"skills": {
+  "title": "Skills",
+  "items": [
+    {
+      "text": "HTML5"
+    },
+    {
+      "text": "CSS3"
+    },
+    {
+      "text": "JavaScript"
+    },
+    {
+      "text": "React"
+    },
+    {
+      "text": "Angular"
+    },
+    {
+      "text": "Node.js"
+    },
+    {
+      "text": "MongoDB"
+    }
+  ]
+},
+
+"experience": {
+  "title": "Experience",
+  "text": "Com mais de 3 anos de experiência em desenvolvimento web, trabalhando com diversos clientes e projetos."
+},
+"education": {
+  "title": "Education",
+  "text": "Sou formado em Ciência da Computação pela Universidade de São Paulo, com especialização em desenvolvimento e design web."
+}
+
+
+
+ 
 }

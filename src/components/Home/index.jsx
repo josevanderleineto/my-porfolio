@@ -95,7 +95,7 @@ const Text = styled.p`
     justify-content: center;
     flex-direction: column;
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--color-text);
     margin: 20px auto; 
     text-align: justify; 
