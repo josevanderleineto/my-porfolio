@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Skill = () => {
     const { t } = useTranslation();
 
-    const skills = t('skills.items', { returnObjects: true });
+    // const skills = t('skills.items', { returnObjects: true });
     // const experience = t('experience.text');
     // const education = t('education.text');
 
@@ -33,15 +33,22 @@ const Skill = () => {
                     </TextSkill>
                 </SkillsBox>
             </SkillsBoxContainer>
-            <SkillsContainer>
-                {skills && skills.length > 0 ? (
-                    skills.map((skill, index) => (
-                        <SkillItem key={index}>{skill.text}</SkillItem>
-                    ))
-                ) : (
-                    <Paragraph>No skills found.</Paragraph>
-                )}
-            </SkillsContainer>
+            <TechContainer>
+                <TechBox>
+                    <TechImage src="/imgSkills/html.png" alt="HTML" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/css.png" alt="CSS" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/react.png" alt="React" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/javascript.png" alt="JavaScript" />
+                </TechBox>
+
+              
+            </TechContainer>
 {/* 
             <SubTitle>{t('experience.title')}</SubTitle>
             <Paragraph>{experience}</Paragraph>
@@ -111,7 +118,7 @@ const TextSkill = styled.p`
     }
 `;
 
-const SkillsContainer = styled.div`
+const TechContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -119,36 +126,19 @@ const SkillsContainer = styled.div`
     width: 100%;
 `;
 
-const SkillItem = styled.div`
-    font-size: 1rem;
-    color: var(--color-text);
-    background-color: black;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
+const TechBox = styled.div`
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    border: 1px solid var(--color-border);
-    border-radius: 5px;
-    box-sizing: border-box;
-
-    @media (max-width: 200px) {
-        width: 80px;
-        height: 80px;
-    }
-
-    @media (max-width: 480px) {
-        width: 60px;
-        height: 60px;
-    }
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: black;
 `;
 
-const Paragraph = styled.p`
-    font-size: 1.5rem;
-    color: var(--color-text);
-    margin: 20px auto;
+const TechImage = styled.img`
+    width: 25px;
 `;
+
 
 export default Skill;

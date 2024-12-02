@@ -48,25 +48,25 @@
   "title": "Skills",
   "items": [
     {
-      "text": "HTML5"
+      "tech": "HTML5"
     },
     {
-      "text": "CSS3"
+      "tech": "CSS3"
     },
     {
-      "text": "JavaScript"
+      "tech": "JavaScript"
     },
     {
-      "text": "React"
+      "tech": "React"
     },
     {
-      "text": "Angular"
+      "tech": "Angular"
     },
     {
-      "text": "Node.js"
+      "tech": "Node.js"
     },
     {
-      "text": "MongoDB"
+      "tech": "MongoDB"
     }
   ]
 
