@@ -34,6 +34,8 @@
       "text": "Ofereço consultoria especializada em desenvolvimento e design de sites, ajudando você a atingir seus objetivos digitais."
     },
 
+    
+
     {
       "titleSkills": "Habilidades",
       "skills": [
@@ -51,7 +53,13 @@
     }
     
   ],
+"textHbilidades": {
+  "text1": "Tenho uma habilidade natural para resolver problemas de maneira eficiente e prática. Seja um desafio técnico ou uma situação de conflito, mantenho a calma e foco em encontrar a melhor solução possível.",
+  "text2": "Eu também possuo experiência em desenvolvimento de software, com algumas experiências com frameworks e bibliotecas como React, Angular, e Node.js.",
+  "text3": "Minha capacidade de aprendizagem e adaptabilidade são extremamente importantes para o meu trabalho. Eu sempre busco novos conhecimentos e técnicas para melhorar minhas habilidades.",
+  "text4": "Eu também possuo uma boa capacidade de comunicação e escrever código limpo e fácil de entender."
 
+},
 
 "skills": {
   "title": "Skills",
