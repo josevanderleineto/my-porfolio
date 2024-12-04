@@ -12,6 +12,7 @@ const Skill = () => {
         <Section id='skills'>
             <Title>{t('skills.title')}</Title>
             <SkillsBoxContainer>
+
                 <SkillsBox>
                     <TextSkill>
                         {t('textHbilidades.text1')}
@@ -19,20 +20,23 @@ const Skill = () => {
                 </SkillsBox>
                 <SkillsBox>
                     <TextSkill>
-                        {t('textHbilidades.text1')}
+                        {t('textHbilidades.text2')}
                     </TextSkill>
                 </SkillsBox>
                 <SkillsBox>
                     <TextSkill>
-                        {t('textHbilidades.text1')}
+                        {t('textHbilidades.text3')}
                     </TextSkill>
                 </SkillsBox>
                 <SkillsBox>
                     <TextSkill>
-                        {t('textHbilidades.text1')}
+                        {t('textHbilidades.text4')}
                     </TextSkill>
                 </SkillsBox>
             </SkillsBoxContainer>
+            <TechsTile>
+                    {t('skills.tech')}
+                </TechsTile>
             <TechContainer>
                 <TechBox>
                     <TechImage src="/imgSkills/html.png" alt="HTML" />
@@ -69,11 +73,6 @@ const Title = styled.h1`
     }
 `;
 
-// const SubTitle = styled.h2`
-//     font-size: 28px;
-//     margin-top: 40px;
-//     margin-bottom: 20px;
-// `;
 
 const Section = styled.section`
     padding: 40px;
@@ -86,6 +85,7 @@ const Section = styled.section`
     margin-top: 100px;
 `;
 
+    
 const SkillsBoxContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -100,9 +100,10 @@ const SkillsBox = styled.div`
     align-items: center;
     color: var(--color-text);
     margin-bottom: 20px;
-    width: 290px;
-    height: 150px;
-    background-color: black;
+    max-width: 240px;
+    height: 120px;
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
 `;
 
 const TextSkill = styled.p`
@@ -126,14 +127,19 @@ const TechContainer = styled.div`
     width: 100%;
 `;
 
+const TechsTile = styled.h2`
+    font-size: 24px;
+    margin-bottom: 20px;`
+
 const TechBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    width: 70px;
-    height: 70px;
-    background-color: black;
+    min-width: 90px;
+    min-height: 90px;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
 `;
 
 const TechImage = styled.img`

@@ -1,0 +1,15 @@
+{
+    "projects": [
+      {
+        "image": "link-to-image-1.jpg",
+        "siteUrl": "https://www.exemplo1.com",
+        "githubUrl": "https://github.com/user/project1"
+      },
+      {
+        "image": "link-to-image-2.jpg",
+        "siteUrl": "https://www.exemplo2.com",
+        "githubUrl": "https://github.com/user/project2"
+      }
+    ]
+  }
+  

@@ -8,4 +8,7 @@ export default defineConfig({
       '@': '/src',
     },
   },
+  json: {
+    namedExports: true, // Isso pode ajudar na importação de arquivos JSON
+  },
 });

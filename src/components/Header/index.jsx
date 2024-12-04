@@ -49,7 +49,10 @@ const Header = () => {
           <StyledAnchor href="#skills">{t('skill')}</StyledAnchor>
         </li>
         <li>
-          <StyledAnchor href="#contact">{t('contact')}</StyledAnchor>
+          <StyledAnchor href="#projects">{t('projectsList')}</StyledAnchor>
+        </li>
+        <li>
+          <StyledAnchor href="#contacts">{t('contact')}</StyledAnchor>
         </li>
         <LanguageButton onClick={toggleLanguage}>
           <img

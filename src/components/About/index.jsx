@@ -82,10 +82,9 @@ const ServiceCard = styled.div`
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: red;
+    background-color: var(--bg-secondary);
     border-radius: 8px;
-    width: 20%; /* Cada card ocupa 30% em telas grandes */
-    max-width: 300px; /* Limita o tamanho máximo dos cards */
+    max-width: 330px; /* Limita o tamanho máximo dos cards */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -99,12 +98,12 @@ const ServiceCard = styled.div`
 `;
 
 const ServiceTitle = styled.h3`
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
 `;
 
 const ServiceText = styled.p`
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--color-text);
 `;
 
