@@ -126,7 +126,7 @@ const Menu = styled.ul`
     position: fixed;
     top: 0;
     left: 0;
-    height: 300px;
+    height: 350px;
     background-color: var(--bg-secondary);
     width: 200px;
     transform: translateX(-100%);
@@ -135,6 +135,14 @@ const Menu = styled.ul`
 
     &.active {
       transform: translateX(0);
+    }
+
+    li:hover {
+      background-color: var(--bg-primary);
+      transition: background-color 0.3s ease;
+      color: white;
+      transition: color 0.3s ease;
+      
     }
   }
 

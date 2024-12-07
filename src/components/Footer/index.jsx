@@ -62,7 +62,7 @@ const ContactItem = styled.div`
 
 const FooterText = styled.p`
     margin: 0;
-    font-size: 0.875rem;
+    font-size: 1rem;
 `;
 
 export default Footer;
