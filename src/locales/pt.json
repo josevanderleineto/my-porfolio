@@ -13,10 +13,10 @@
   "titleAbout": "Sobre Mim",
   "aboutDetails": [
     {
-      "textAbout": "Sou um desenvolvedor web com paixão por criar experiências digitais envolventes e intuitivas. Com mais de 3 anos de experiência, me especializo em construir interfaces modernas e responsivas usando tecnologias como HTML, CSS, JavaScript, React e Angular. Além de desenvolver sites para empresas, educadores e pesquisadores, sou dedicado a transformar ideias em soluções digitais que chamam a atenção e entregam valor."
+      "textAbout": "Sou um desenvolvedor web com paixão por criar experiências digitais envolventes e intuitivas. Com mais de 3 anos de experiência, me especializo em construir interfaces modernas e responsivas usando tecnologias como HTML, CSS, JavaScript, React, Express e Wordpress. Além de desenvolver sites para empresas, sou dedicado a transformar ideias em soluções digitais que chamam a atenção e entregam valor."
     },
     {
-      "textAbout": "Com mais de 3 anos de experiência em desenvolvimento web, tive a oportunidade de colaborar com diversas empresas, educadores e pesquisadores, ajudando-os a transformar suas ideias em soluções digitais robustas e funcionais. Um dos meus projetos de destaque é o Gerador de Notação de Autor, onde utilizei a tabela Cutter como base. Atualmente, estou desenvolvendo uma aplicação semelhante usando tabelas PHA com JavaScript, com o objetivo de otimizar processos e oferecer soluções inovadoras na área de Biblioteconomia."
+      "textAbout": "Tive a oportunidade de colaborar com diversos projetos, ajudando-os a transformar suas ideias em soluções digitais robustas e funcionais. Um dos meus projetos de destaque é o Gerador de Notação de Autor, onde utilizei a tabela Cutter como base. Atualmente, estou desenvolvendo uma aplicação semelhante usando tabelas PHA com JavaScript, com o objetivo de otimizar processos e oferecer soluções inovadoras na área de Biblioteconomia."
     }
   ],
 
@@ -24,11 +24,11 @@
   "services": [
     {
       "title": "Desenvolvimento Web",
-      "text": "Crio sites modernos e responsivos usando tecnologias como HTML, CSS, JavaScript, React e Angular."
+      "text": "Desenvolvo aplicaçoes usando tecnologias como HTML, CSS, JavaScript, React, Express e Wordpress"
     },
     {
-      "title": "Design de Sites",
-      "text": "Crio interfaces envolventes e intuitivas que chamam a atenção e entregam valor."
+      "title": "Web Design ",
+      "text": "Crio sites com interfaces envolventes e intuitivas que chamam a atenção e entregam valor."
     },
     {
       "title": "Consultoria",
@@ -94,8 +94,23 @@
     "viewCode": "Ver Código"
   },
 
+  
+    "contactForm": {
+      "title": "Contato",
+      "name": "Informe seu nome",
+      "labelName": "Nome",
+      "email": "Digite seu email",
+      "labelEmail": "Email",
+      "subject": "Informe o assunto",
+      "labelSubject": "Assunto",
+      "message": "Digite a mensagem",
+      "labelMessage": "Mensagem",
+      "send": "Enviar"
+    },
+  
+  
+
   "footer": {
-    "title": "Contato",
     "text1": "Email: vanderlei.nn@gmail.com",
     "text2": "Telefone: +55 71 98449-8113",
     "text3": "Salvador - Bahia, Brasil",

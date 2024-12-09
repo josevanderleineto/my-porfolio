@@ -7,7 +7,6 @@ const Footer = () => {
 
     return (
         <FooterContainer id='contacts'>
-            <FooterTitle>{t('footer.title')}</FooterTitle>
             <FooterContact>
                 <ContactItem>
                     <FaEnvelope /> {t('footer.text1')}
@@ -35,11 +34,6 @@ const FooterContainer = styled.footer`
     gap: 1rem;
 `;
 
-const FooterTitle = styled.h3`
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-`;
 
 const FooterContact = styled.div`
     display: flex;
@@ -62,7 +56,7 @@ const ContactItem = styled.div`
 
 const FooterText = styled.p`
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
 `;
 
 export default Footer;

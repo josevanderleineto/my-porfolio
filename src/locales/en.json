@@ -13,10 +13,10 @@
   "titleAbout": "About Me",
   "aboutDetails": [
     {
-      "textAbout": "I am a web developer with a passion for creating engaging and intuitive digital experiences. With over 3 years of experience, I specialise in building modern and responsive interfaces using technologies such as HTML, CSS, JavaScript, React, and Angular. In addition to developing websites for businesses, educators, and researchers, I am dedicated to turning ideas into digital solutions that capture attention and deliver value."
+      "textAbout": "I am a web developer with a passion for creating engaging and intuitive digital experiences. With over three years of experience, I specialise in building modern, responsive interfaces using technologies such as HTML, CSS, JavaScript, React, Express, and WordPress. In addition to developing websites for businesses, I am committed to transforming ideas into digital solutions that capture attention and deliver value."
     },
     {
-      "textAbout": "With over 3 years of experience in web development, I have had the opportunity to collaborate with various companies, educators, and researchers, helping them to transform their ideas into robust and functional digital solutions. One of my standout projects is the Author Notation Generator, where I used the Cutter table as a basis. I am currently developing a similar application using PHA tables with JavaScript, aiming to optimise processes and offer innovative solutions in the field of Library Science."
+      "textAbout": "I have had the opportunity to collaborate on various projects, helping transform ideas into robust and functional digital solutions. One of my notable projects is the Author Notation Generator, where I utilised the Cutter table as a foundation. Currently, I am developing a similar application using PHA tables with JavaScript, aiming to optimise processes and provide innovative solutions in the field of Library and Information Science."
     }
   ],
 
@@ -28,7 +28,7 @@
     },
     {
       "title": "Web Design",
-      "text": "I design engaging and intuitive interfaces that capture attention and deliver value."
+      "text": "I create websites with engaging and intuitive interfaces that capture attention and deliver value."
     },
     {
       "title": "Consulting",
@@ -93,6 +93,22 @@
     "viewSite": "View Site",
     "viewCode": "View Code"
   },
+
+  
+    "contactForm": {
+      "title": "Contact",
+      "name": "Enter your name",
+      "labelName": "Name",
+      "email": "Enter your email",
+      "labelEmail": "Email",
+      "subject": "Enter the subject",
+      "labelSubject": "Subject",
+      "message": "Enter the message",
+      "labelMessage": "Message",
+      "send": "Send"
+    },
+
+  
 
   "footer": {
     "title": "Contact",

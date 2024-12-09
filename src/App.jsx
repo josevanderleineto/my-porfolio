@@ -7,6 +7,7 @@ import './assets/reset.css';
 import './App.css';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Contacts from './components/Contacts';
 
 function App() {
   const { i18n } = useTranslation();
@@ -22,6 +23,7 @@ function App() {
         <About/>
         <Skill/>
         <Projects/>
+        <Contacts/>
         <Footer/>
     </div>
   );

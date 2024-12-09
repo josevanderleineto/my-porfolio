@@ -39,19 +39,51 @@ const Skill = () => {
                 </TechsTile>
             <TechContainer>
                 <TechBox>
-                    <TechImage src="/imgSkills/html.png" alt="HTML" />
+                    <TechImage src="/imgSkills/html.svg" alt="HTML" />
                 </TechBox>
                 <TechBox>
-                    <TechImage src="/imgSkills/css.png" alt="CSS" />
+                    <TechImage src="/imgSkills/css.svg" alt="CSS" />
                 </TechBox>
                 <TechBox>
-                    <TechImage src="/imgSkills/react.png" alt="React" />
+                    <TechImage src="/imgSkills/javascript.svg" alt="JavaScript" />
                 </TechBox>
                 <TechBox>
-                    <TechImage src="/imgSkills/javascript.png" alt="JavaScript" />
+                    <TechImage src="/imgSkills/typescript.svg" alt="TypeScript" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/react.svg" alt="React" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/next-js.svg" alt="Next" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/nodejs.svg" alt="Node.js" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/express.svg" alt="Express"/>
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/mongo.svg" alt="MongoDB" />
+                </TechBox>  
+                <TechBox>
+                    <TechImage src="/imgSkills/mysql.svg" alt="MySQL" />
+                </TechBox>    
+                <TechBox>
+                    <TechImage src="/imgSkills/git.svg" alt="Git" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/github.svg" alt="GitHub" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/figma.svg" alt="Figma" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/fremer.png" alt="Fremer" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/wordpress.svg" alt="Wordpress" />
                 </TechBox>
 
-              
             </TechContainer>
 {/* 
             <SubTitle>{t('experience.title')}</SubTitle>
@@ -136,14 +168,14 @@ const TechBox = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    min-width: 90px;
-    min-height: 90px;
-    background-color: var(--bg-secondary);
+    min-width: 120px;
+    min-height: 120px;
+    background-color: var(--bg-gray);
     border-radius: 8px;
 `;
 
 const TechImage = styled.img`
-    width: 25px;
+    width: 40px;
 `;
 
 
