@@ -1,12 +1,26 @@
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+
 
 const Footer = () => {
     const { t } = useTranslation();
 
     return (
         <FooterContainer id='contacts'>
+            <SocialIcon>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin />
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <FaSquareInstagram />
+                </a>
+            </SocialIcon>
             <FooterContact>
                 <ContactItem>
                     <FaEnvelope /> {t('footer.text1')}
@@ -22,6 +36,28 @@ const Footer = () => {
         </FooterContainer>
     );
 };
+
+
+const SocialIcon = styled.div`
+    display: flex;
+    gap: 35px; /* Adiciona espaço entre os ícones */
+    color: var(--color-text);
+    font-size: 40px;
+    margin: 40px 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--bg-gray); /* Ajuste a cor conforme desejado para o hover */
+        }
+    }
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+`;
 
 const FooterContainer = styled.footer`
     background-color: var(--bg-secondary);
@@ -51,12 +87,14 @@ const ContactItem = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 `;
 
 const FooterText = styled.p`
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 `;
+
+// Duplicate declaration removed
 
 export default Footer;

@@ -50,6 +50,7 @@ const Skill = () => {
                 <TechBox>
                     <TechImage src="/imgSkills/typescript.svg" alt="TypeScript" />
                 </TechBox>
+            
                 <TechBox>
                     <TechImage src="/imgSkills/react.svg" alt="React" />
                 </TechBox>
@@ -57,7 +58,19 @@ const Skill = () => {
                     <TechImage src="/imgSkills/next-js.svg" alt="Next" />
                 </TechBox>
                 <TechBox>
+                    <TechImage src="/imgSkills/styled.svg" alt="Styled Componets" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/tailwind-css.svg" alt="TaiwindCSS" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/bootstrap.svg" alt="Bootstrap" />
+                </TechBox>
+                <TechBox>
                     <TechImage src="/imgSkills/nodejs.svg" alt="Node.js" />
+                </TechBox>
+                <TechBox>
+                    <TechImage src="/imgSkills/python.svg" alt="Python" />
                 </TechBox>
                 <TechBox>
                     <TechImage src="/imgSkills/express.svg" alt="Express"/>
@@ -118,7 +131,7 @@ const Section = styled.section`
 `;
 
     
-const SkillsBoxContainer = styled.div`
+const SkillsBoxContainer = styled.article`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

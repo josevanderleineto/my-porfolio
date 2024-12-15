@@ -7,7 +7,10 @@ import './assets/reset.css';
 import './App.css';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import Contacts from './components/Contacts';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+// import Contacts from './components/Contacts';
 
 function App() {
   const { i18n } = useTranslation();
@@ -18,12 +21,17 @@ function App() {
 
   return (
     <div>
-      <Header changeLanguage={changeLanguage}/>
+      <header>
+        <Header changeLanguage={changeLanguage}/>
+      </header>
+      <main>
         <Home/>
         <About/>
         <Skill/>
         <Projects/>
-        <Contacts/>
+        {/* <Contacts/>  */}
+      </main>
+        
         <Footer/>
     </div>
   );

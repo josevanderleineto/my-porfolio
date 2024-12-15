@@ -13,7 +13,7 @@
   "titleAbout": "About Me",
   "aboutDetails": [
     {
-      "textAbout": "I am a web developer with a passion for creating engaging and intuitive digital experiences. With over three years of experience, I specialise in building modern, responsive interfaces using technologies such as HTML, CSS, JavaScript, React, Express, and WordPress. In addition to developing websites for businesses, I am committed to transforming ideas into digital solutions that capture attention and deliver value."
+      "textAbout": "I am a web developer with a passion for creating engaging and intuitive digital experiences. With over three years of experience, I specialise in building modern, responsive interfaces using technologies such as HTML, CSS, JavaScript, React, Express, and WordPress."
     },
     {
       "textAbout": "I have had the opportunity to collaborate on various projects, helping transform ideas into robust and functional digital solutions. One of my notable projects is the Author Notation Generator, where I utilised the Cutter table as a foundation. Currently, I am developing a similar application using PHA tables with JavaScript, aiming to optimise processes and provide innovative solutions in the field of Library and Information Science."
@@ -83,15 +83,18 @@
   "projects": {
     "title": "My Projects",
     "projeto1": {
-      "title": "Project 1",
-      "description": "Description of project 1"
+      "title": "Self-Portrait Project",
+      "description": "The Self-Portrait Project, developed for the Rede de Desenvolvimento Quilombola Eparrei, aims to train 60 young quilombolas in the production of experimental photography. I developed the website using React JS for the interface, Styled Components for the responsive design, and Vercel storage for content storage and hosting. The project addressed a real demand, delivering a functional, scalable solution that aligned with the needs of the initiative."
     },
     "projeto2": {
       "title": "Project 2",
       "description": "Description of project 2"
     },
+    
     "viewSite": "View Site",
     "viewCode": "View Code"
+
+  
   },
 
   
@@ -115,6 +118,6 @@
     "text1": "Email: jose.vanderlei.nn@gmail.com",
     "text2": "Phone: +55 71 98449-8113",
     "text3": "Salvador - Bahia, Brazil",
-    "text": "© 2021 Vanderlei Neto. All rights reserved."
+    "text": "© 2024 By Vanderlei Neto. All rights reserved."
   }
 }

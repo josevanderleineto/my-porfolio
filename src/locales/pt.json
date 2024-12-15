@@ -13,7 +13,7 @@
   "titleAbout": "Sobre Mim",
   "aboutDetails": [
     {
-      "textAbout": "Sou um desenvolvedor web com paixão por criar experiências digitais envolventes e intuitivas. Com mais de 3 anos de experiência, me especializo em construir interfaces modernas e responsivas usando tecnologias como HTML, CSS, JavaScript, React, Express e Wordpress. Além de desenvolver sites para empresas, sou dedicado a transformar ideias em soluções digitais que chamam a atenção e entregam valor."
+      "textAbout": "Sou um desenvolvedor web com paixão por criar experiências digitais envolventes e intuitivas. Com mais de 3 anos de experiência, me especializo em construir interfaces modernas e responsivas usando tecnologias como HTML, CSS, JavaScript, React, Express e Wordpress."
     },
     {
       "textAbout": "Tive a oportunidade de colaborar com diversos projetos, ajudando-os a transformar suas ideias em soluções digitais robustas e funcionais. Um dos meus projetos de destaque é o Gerador de Notação de Autor, onde utilizei a tabela Cutter como base. Atualmente, estou desenvolvendo uma aplicação semelhante usando tabelas PHA com JavaScript, com o objetivo de otimizar processos e oferecer soluções inovadoras na área de Biblioteconomia."
@@ -83,8 +83,8 @@
   "projects": {
     "title": "Meus Projetos",
     "projeto1": {
-      "title": "Projeto 1",
-      "description": "Descrição do projeto 1"
+      "title": "Projeto Autorretrato",
+      "description": "O Projeto Autorretrato, desenvolvido para a Rede de Desenvolvimento Quilombola Eparrei com o objetivo de capacitar 60 jovens quilombolas na produção de fotografias experimentais. Criei o site usando React JS para a interface, Styled Components para o design responsivo e o storage da Vercel para o armazenamento e hospedagem do conteúdo. O projeto atendeu a uma demanda real, entregando uma solução funcional, escalável e alinhada com as necessidades da iniciativa."
     },
     "projeto2": {
       "title": "Projeto 2",
@@ -114,6 +114,6 @@
     "text1": "Email: vanderlei.nn@gmail.com",
     "text2": "Telefone: +55 71 98449-8113",
     "text3": "Salvador - Bahia, Brasil",
-    "text": "© 2021 Vanderlei Neto. Todos os direitos reservados."
+    "text": "© 2024 Feito por  Vanderlei Neto. Todos os direitos reservados."
   }
 }

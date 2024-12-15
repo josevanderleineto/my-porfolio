@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -15,17 +13,7 @@ const Home = () => {
                 {t('textHome')}
             </Text>
             <a href='$'><Button>{t('cv')}</Button></a>
-            <SocialIcon>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin />
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                    <FaGithub />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <FaSquareInstagram />
-                </a>
-            </SocialIcon>
+            
         </Section>
     );
 }
@@ -57,26 +45,6 @@ const SubTitle = styled.h2`
     }
 `;
 
-const SocialIcon = styled.div`
-    display: flex;
-    gap: 35px; /* Adiciona espaço entre os ícones */
-    color: var(--color-text);
-    font-size: 40px;
-    margin: 40px 0;
-
-    a {
-        color: inherit;
-        text-decoration: none;
-        transition: color 0.3s;
-
-        &:hover {
-            color: var(--bg-secondary-hover); /* Ajuste a cor conforme desejado para o hover */
-        }
-    }
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
-`;
 
 const Profile = styled.img`
     width: 150px;

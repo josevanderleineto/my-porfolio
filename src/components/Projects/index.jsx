@@ -1,24 +1,46 @@
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+import Slider from 'react-slick';
 
 const Projects = () => {
     const { t } = useTranslation();
 
+    // Configuração do Slider
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,  // Mostrar 2 cards por vez
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        centerMode: false,  // Remover centro mode para evitar sobreposição
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 768,  // No mobile, mostramos 1 card por vez
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,  // Desativando o centro no mobile
+                }
+            }
+        ]
+    };
+
     return (
         <Section id='projects'>
             <Title>{t('projects.title')}</Title>
-            <ProjectsGrid>
+            <StyledSlider {...settings}>
                 {/* Card para o Projeto 1 */}
                 <Card>
-                    <Image src="/imgSkills/javascript.png" alt="Projeto 1" />
+                    <Image src="/public/img/capa_autorretrato.webp" alt="Autorretrato Lab" />
                     <CardContent>
                         <CardTitle>{t('projects.projeto1.title')}</CardTitle>
                         <CardText>{t('projects.projeto1.description')}</CardText>
                         <ButtonGroup>
-                            <Button href="https://www.exemplo1.com" target="_blank" rel="noopener noreferrer">
+                            <Button href="https://www.eparreiautorretrato.com/" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewSite')}
                             </Button>
-                            <Button href="https://github.com/usuario/projeto1" target="_blank" rel="noopener noreferrer">
+                            <Button href="https://github.com/autoretaro/lab" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewCode')}
                             </Button>
                         </ButtonGroup>
@@ -27,21 +49,23 @@ const Projects = () => {
 
                 {/* Card para o Projeto 2 */}
                 <Card>
-                    <Image src="/vite.svg" alt="Projeto 2" />
+                    <Image src="/public/img/capa_autorretrato.webp" alt="Autorretrato Lab" />
                     <CardContent>
                         <CardTitle>{t('projects.projeto2.title')}</CardTitle>
                         <CardText>{t('projects.projeto2.description')}</CardText>
                         <ButtonGroup>
-                            <Button href="https://www.exemplo2.com" target="_blank" rel="noopener noreferrer">
+                            <Button href="https://www.eparreiautorretrato.com/" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewSite')}
                             </Button>
-                            <Button href="https://github.com/usuario/projeto2" target="_blank" rel="noopener noreferrer">
+                            <Button href="https://github.com/autoretaro/lab" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewCode')}
                             </Button>
                         </ButtonGroup>
                     </CardContent>
                 </Card>
-            </ProjectsGrid>
+
+                {/* Adicione mais cards conforme necessário */}
+            </StyledSlider>
         </Section>
     );
 };
@@ -56,13 +80,18 @@ const Section = styled.section`
 const Title = styled.h1`
     font-size: 36px;
     margin-bottom: 40px;
-    
 `;
 
-const ProjectsGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+const StyledSlider = styled(Slider)`
+    /* Adicionando margem entre os cards */
+    .slick-slide {
+        padding: 0 15px; /* 15px de margem em cada lado */
+    }
+
+    /* Para melhorar a visualização, adicionar um espaço nos cards */
+    .slick-list {
+        padding: 0 10px; /* Ajustando o espaço das bordas laterais */
+    }
 `;
 
 const Card = styled.div`
@@ -71,7 +100,9 @@ const Card = styled.div`
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-
+    width: 100%; 
+    height: auto;
+    
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
@@ -80,8 +111,14 @@ const Card = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 200px;
+    height: 240px;
     object-fit: cover;
+    background-color: #f0f0f0;
+
+    @media (max-width: 768px) {
+        height: 180px;
+        width: 400px;
+    }
 `;
 
 const CardContent = styled.div`
@@ -89,13 +126,13 @@ const CardContent = styled.div`
 `;
 
 const CardTitle = styled.h2`
-    font-size: 24px;
+    font-size: 20px;
     color: #333;
     margin-bottom: 10px;
 `;
 
 const CardText = styled.p`
-    font-size: 16px;
+    font-size: 0.8rem;
     color: #555;
 `;
 
@@ -117,6 +154,5 @@ const Button = styled.a`
         background-color: #0056b3;
     }
 `;
-
 
 export default Projects;
