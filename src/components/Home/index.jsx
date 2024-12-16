@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -13,7 +13,6 @@ const Home = () => {
                 {t('textHome')}
             </Text>
             <a href='$'><Button>{t('cv')}</Button></a>
-            
         </Section>
     );
 }
@@ -45,11 +44,27 @@ const SubTitle = styled.h2`
     }
 `;
 
+const moveUpDown = keyframes`
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+`;
 
 const Profile = styled.img`
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 1px solid transparent;
+    box-shadow: 2px -3px 51px 33px rgba(27,212,212,0.85);
+  -webkit-box-shadow: 2px -3px 51px 33px rgba(136, 242, 242, 0.85);
+  -moz-box-shadow: 2px -3px 51px 33px rgba(87, 235, 235, 0.85);
+    animation: ${moveUpDown} 2s ease-in-out infinite; /* Animação de subir e descer */
 
     @media (max-width: 768px) {
         width: 100px;
