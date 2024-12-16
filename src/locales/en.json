@@ -86,10 +86,7 @@
       "title": "Self-Portrait Project",
       "description": "The Self-Portrait Project, developed for the Rede de Desenvolvimento Quilombola Eparrei, aims to train 60 young quilombolas in the production of experimental photography. I developed the website using React JS for the interface, Styled Components for the responsive design, and Vercel storage for content storage and hosting. The project addressed a real demand, delivering a functional, scalable solution that aligned with the needs of the initiative."
     },
-    "projeto2": {
-      "title": "Project 2",
-      "description": "Description of project 2"
-    },
+    
     
     "viewSite": "View Site",
     "viewCode": "View Code"

@@ -9,18 +9,27 @@ const Projects = () => {
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 2,  // Mostrar 2 cards por vez
+        slidesToShow: 2,  // Mostrar 2 cards por vez em telas maiores
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        centerMode: false,  // Remover centro mode para evitar sobreposição
+        centerMode: false,  // Desabilitado para evitar sobreposição
         focusOnSelect: true,
         responsive: [
             {
                 breakpoint: 768,  // No mobile, mostramos 1 card por vez
                 settings: {
-                    slidesToShow: 1,
-                    centerMode: false,  // Desativando o centro no mobile
+                    slidesToShow: 1,  // Apenas 1 card visível por vez
+                    slidesToScroll: 1,  // Vai scrollar 1 card por vez
+                    centerMode: false,  // Desativando centro no mobile
+                }
+            },
+            {
+                breakpoint: 300,  // Para telas ainda menores (celulares de 300px)
+                settings: {
+                    slidesToShow: 1,  // Ainda 1 card por vez
+                    slidesToScroll: 1,
+                    centerMode: false,  // Desabilitar centro no mobile
                 }
             }
         ]
@@ -32,7 +41,7 @@ const Projects = () => {
             <StyledSlider {...settings}>
                 {/* Card para o Projeto 1 */}
                 <Card>
-                    <Image src="/public/img/capa_autorretrato.webp" alt="Autorretrato Lab" />
+                    <Image src="/img/capa_autorretrato.webp" alt="Autorretrato Lab" />
                     <CardContent>
                         <CardTitle>{t('projects.projeto1.title')}</CardTitle>
                         <CardText>{t('projects.projeto1.description')}</CardText>
@@ -40,7 +49,7 @@ const Projects = () => {
                             <Button href="https://www.eparreiautorretrato.com/" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewSite')}
                             </Button>
-                            <Button href="https://github.com/autoretaro/lab" target="_blank" rel="noopener noreferrer">
+                            <Button href="https://github.com/josevanderleineto/autorretrato" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewCode')}
                             </Button>
                         </ButtonGroup>
@@ -49,15 +58,15 @@ const Projects = () => {
 
                 {/* Card para o Projeto 2 */}
                 <Card>
-                    <Image src="/public/img/capa_autorretrato.webp" alt="Autorretrato Lab" />
+                    <Image src="/img/capa_autorretrato.webp" alt="Autorretrato Lab" />
                     <CardContent>
-                        <CardTitle>{t('projects.projeto2.title')}</CardTitle>
-                        <CardText>{t('projects.projeto2.description')}</CardText>
+                        <CardTitle>{t('projects.projeto1.title')}</CardTitle>
+                        <CardText>{t('projects.projeto1.description')}</CardText>
                         <ButtonGroup>
                             <Button href="https://www.eparreiautorretrato.com/" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewSite')}
                             </Button>
-                            <Button href="https://github.com/autoretaro/lab" target="_blank" rel="noopener noreferrer">
+                            <Button href="https://github.com/josevanderleineto/autorretrato" target="_blank" rel="noopener noreferrer">
                                 {t('projects.viewCode')}
                             </Button>
                         </ButtonGroup>
@@ -75,22 +84,49 @@ const Section = styled.section`
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 768px) {
+        margin: 0 20px;
+        padding: 30px 15px;  /* Ajuste do padding para telas menores */
+    }
+
+    @media (max-width: 300px) {
+        padding: 20px 10px;  /* Menos padding para telas muito pequenas */
+    }
 `;
 
 const Title = styled.h1`
     font-size: 36px;
     margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+        font-size: 28px;  /* Tamanho reduzido do título para telas menores */
+    }
+
+    @media (max-width: 300px) {
+        font-size: 22px;  /* Tamanho reduzido do título para telas muito pequenas */
+    }
 `;
 
 const StyledSlider = styled(Slider)`
-    /* Adicionando margem entre os cards */
     .slick-slide {
-        padding: 0 15px; /* 15px de margem em cada lado */
+        padding: 0 5px; /* Menos padding no mobile para evitar espaços */
     }
 
-    /* Para melhorar a visualização, adicionar um espaço nos cards */
     .slick-list {
-        padding: 0 10px; /* Ajustando o espaço das bordas laterais */
+        padding: 0;  /* Sem padding extra nos limites da lista */
+    }
+
+    @media (max-width: 768px) {
+        .slick-slide {
+            padding: 0 5px;  /* Ajustando padding para telas pequenas */
+        }
+    }
+
+    @media (max-width: 300px) {
+        .slick-slide {
+            padding: 0;  /* Removendo padding para telas muito pequenas */
+        }
     }
 `;
 
@@ -100,12 +136,20 @@ const Card = styled.div`
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    width: 100%; 
+    width: 100%;  /* Garantindo que o card ocupe toda a largura disponível */
     height: auto;
-    
+
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+        margin: 0;  /* Removendo margens extras */
+    }
+
+    @media (max-width: 300px) {
+        margin: 0 5px;  /* Ajustando margens em telas muito pequenas */
     }
 `;
 
@@ -116,8 +160,11 @@ const Image = styled.img`
     background-color: #f0f0f0;
 
     @media (max-width: 768px) {
-        height: 180px;
-        width: 400px;
+        height: 180px;  /* Ajustando a altura da imagem em telas menores */
+    }
+
+    @media (max-width: 300px) {
+        height: 160px;  /* Ajustando a altura para telas muito pequenas */
     }
 `;
 
@@ -129,17 +176,37 @@ const CardTitle = styled.h2`
     font-size: 20px;
     color: #333;
     margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+        font-size: 18px;  /* Tamanho do título em telas pequenas */
+    }
+
+    @media (max-width: 300px) {
+        font-size: 16px;  /* Tamanho do título em telas muito pequenas */
+    }
 `;
 
 const CardText = styled.p`
     font-size: 0.8rem;
     color: #555;
+
+    @media (max-width: 768px) {
+        font-size: 0.75rem;  /* Ajuste de fonte para telas pequenas */
+    }
+
+    @media (max-width: 300px) {
+        font-size: 0.7rem;  /* Ajuste de fonte para telas muito pequenas */
+    }
 `;
 
 const ButtonGroup = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;  /* Botões empilhados em telas pequenas */
+    }
 `;
 
 const Button = styled.a`
@@ -149,9 +216,18 @@ const Button = styled.a`
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Margem inferior nos botões no mobile */
 
     &:hover {
         background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+        padding: 8px 15px;  /* Tamanho reduzido do botão em telas pequenas */
+    }
+
+    @media (max-width: 300px) {
+        padding: 6px 12px;  /* Tamanho do botão em telas muito pequenas */
     }
 `;
 

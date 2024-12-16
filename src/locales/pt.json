@@ -86,10 +86,6 @@
       "title": "Projeto Autorretrato",
       "description": "O Projeto Autorretrato, desenvolvido para a Rede de Desenvolvimento Quilombola Eparrei com o objetivo de capacitar 60 jovens quilombolas na produção de fotografias experimentais. Criei o site usando React JS para a interface, Styled Components para o design responsivo e o storage da Vercel para o armazenamento e hospedagem do conteúdo. O projeto atendeu a uma demanda real, entregando uma solução funcional, escalável e alinhada com as necessidades da iniciativa."
     },
-    "projeto2": {
-      "title": "Projeto 2",
-      "description": "Descrição do projeto 2"
-    },
     "viewSite": "Ver Site",
     "viewCode": "Ver Código"
   },
