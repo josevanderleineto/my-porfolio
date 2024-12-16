@@ -26,7 +26,7 @@ function App() {
       <main>
         {/* Vídeo de fundo fixo */}
         <BackgroundVideo autoPlay loop muted>
-          <source src="bg.mp4" type="video/mp4" />
+          <source src="https://s7gjwuqqoa80yemr.public.blob.vercel-storage.com/porfolio/video/bg-eCwe6ydlqiIeoM2ij4LVmPhw6dFAj8.mp4" type="video/mp4" />
           Seu navegador não suporta o vídeo.
         </BackgroundVideo>
 
