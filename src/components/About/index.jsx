@@ -58,14 +58,14 @@ const Section = styled.section`
 `;
 
 const Paragraph = styled.p`
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: var(--color-text);
     margin: 20px auto;
     padding: 0 70px 0 70px;
 
     @media (max-width: 768px) {
         padding: 0 20px 0 20px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 `;
 

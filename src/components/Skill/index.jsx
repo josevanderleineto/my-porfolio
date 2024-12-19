@@ -156,11 +156,11 @@ const TextSkill = styled.p`
     margin: 25px;
 
     @media (max-width: 768px) {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     @media (max-width: 280px) {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 `;
 

@@ -78,14 +78,15 @@ const Text = styled.p`
     justify-content: center;
     flex-direction: column;
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: var(--color-text);
     margin: 20px auto; 
     text-align: justify; 
     text-justify: inter-word;
 
     @media (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 1.2rem;
+
     }
 `;
 
