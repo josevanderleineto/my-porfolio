@@ -23,7 +23,7 @@ const Footer = () => {
             </SocialIcon>
             <FooterContact>
                 <ContactItem>
-                    <FaEnvelope /> {t('footer.text1')}
+                    <Email href="mailto:jv.neto@outlook.com.be"><FaEnvelope /> {t('footer.text1')}</Email>
                 </ContactItem>
                 <ContactItem>
                     <FaPhone /> {t('footer.text2')}
@@ -80,6 +80,16 @@ const FooterContact = styled.div`
     @media (min-width: 768px) {
         flex-direction: row;
         gap: 1.5rem;
+    }
+`;
+
+const Email = styled.a`
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+        color: var(--bg-gray); /* Ajuste a cor conforme desejado para o hover */
     }
 `;
 
