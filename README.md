@@ -1,8 +1,47 @@
-# React + Vite
+<h1 align="center">Vanderlei Neto</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  This website was developed to be my personal portfolio. <br/>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="Portfolio" src="./src/assets/capa-mayportfolio.png" width="100%">
+</p>
+
+## 🚀 Technologies
+
+This project was developed with the following technologies:
+
+- **React**
+- **Vite**
+- **Styled Components**
+- Git and Github
+
+## 💻 Project
+
+This website is my personal portfolio, developed to showcase my projects and web development skills.
+
+- [Access the completed project online](https://josevanderleineto.vercel.app/)
+
+## 🔖 Layout
+
+## :memo: License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ♥ by Vanderlei Neto

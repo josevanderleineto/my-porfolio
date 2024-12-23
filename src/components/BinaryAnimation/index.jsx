@@ -10,15 +10,17 @@ const BinaryAnimation = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const fontSize = 14;
+    // Calculate the font size based on the screen width
+    const fontSize = Math.min(Math.max(window.innerWidth / 30, 12), 24); // Minimum 12px, maximum 24px
     const columns = Math.floor(canvas.width / fontSize);
     const drops = Array(columns).fill(0);
-
+    canvas.style.background = 'linear-gradient(to right, #0e2342, #9CA3AF)';
+    
     const draw = () => {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.fillStyle = 'rgba(1, 11, 25, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#0f0'; // Cor do código binário
+      ctx.fillStyle = ' #7FFFD4'; // Color of the binary code
       ctx.font = `${fontSize}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {
