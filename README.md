@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">Vanderlei Neto</h1>
 
 <p align="center">
@@ -12,13 +13,34 @@
 </p>
 
 <p align="center">
+=======
+
+<h1 align="center">Vanderlei Neto</h1>
+
+<p align="center">
+  This website was developed to be my personal portfolio. <br/>
+</p>
+
+<p align="center">
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
+
+<p align="center">
+>>>>>>> 87a326c (Add readme)
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
 <br>
 
 <p align="center">
+<<<<<<< HEAD
   <img alt="Portfolio" src="./src/assets/capa-mayportfolio.png" width="100%">
+=======
+  <img alt="Portfolio" src="/public//img/capa-mayportfolio.png" width="100%">
+>>>>>>> 87a326c (Add readme)
 </p>
 
 ## 🚀 Technologies
