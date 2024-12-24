@@ -12,7 +12,9 @@ const Home = () => {
             <Text>
                 {t('textHome')}
             </Text>
-            <a href='$'><Button>{t('cv')}</Button></a>
+            <a href={t('resume')} target="_blank" rel="noopener noreferrer">
+                <Button>{t('cv')}</Button>
+            </a>
         </Section>
     );
 }
