@@ -14,6 +14,11 @@
     --color-text: #000000; /* Texto escuro */
   }
 
+  html {
+    scrollbar-color: #7FFFD4 var(--bg-secondary);
+
+}
+
   body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-primary);

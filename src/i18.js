@@ -16,7 +16,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en', // Idioma padrão
+    lng: 'pt', // Idioma padrão
     interpolation: {
       escapeValue: false, // O React já protege contra XSS
     },
