@@ -11,6 +11,7 @@ const Contacts = () => {
         message: ''
     });
     const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false); // Novo estado para controle de envio
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
@@ -32,11 +33,36 @@ const Contacts = () => {
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            // Lógica para enviar o formulário (submissão, API, etc.)
-            console.log('Formulário enviado com sucesso!', formData);
+            setIsSubmitting(true); // Inicia o processo de envio
+
+            try {
+                const response = await fetch('https://form-api-nine.vercel.app/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    console.log('Formulário enviado com sucesso!', result);
+                    alert(t('contactForm.successMessage'));
+                    setFormData({ name: '', email: '', subject: '', message: '' }); // Limpa o formulário
+                } else {
+                    console.log('Erro ao enviar o formulário', result);
+                    alert(t('contactForm.errorMessage'));
+                }
+            } catch (error) {
+                console.error('Erro na comunicação com a API', error);
+                alert(t('contactForm.errorMessage'));
+            } finally {
+                setIsSubmitting(false); // Finaliza o processo de envio
+            }
         } else {
             console.log('Erro na validação do formulário');
         }
@@ -86,7 +112,9 @@ const Contacts = () => {
                 />
                 {errors.message && <Error>{errors.message}</Error>}
 
-                <Button type='submit'>{t('contactForm.send')}</Button>
+                <Button type='submit' disabled={isSubmitting}>
+                    {isSubmitting ? t('contactForm.sending') : t('contactForm.send')}
+                </Button>
             </Form>
         </ContactsContainer>
     );
@@ -97,7 +125,7 @@ const Title = styled.h2`
     text-align: center;
 `;
 
-const ContactsContainer = styled.div`
+const ContactsContainer = styled.section`
     padding: 20px;
     background-color: var(--bg-secondary);
     border-radius: 8px;
@@ -133,18 +161,28 @@ const TextArea = styled.textarea`
     border: 1px solid #ccc;
     border-radius: 4px;
     height: 12vh;
+    
 `;
 
 const Button = styled.button`
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: #7FFFD4;
+    color: var(--bg-secondary);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    
+
 
     &:hover {
-        background-color: #0056b3;
+        background-color:rgb(136, 243, 208);
+
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
     }
 `;
 

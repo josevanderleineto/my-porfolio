@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Skill from './components/Skill';
 import Projects from './components/Projects';
+import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import BinaryAnimation from './components/BinaryAnimation'; // Importa o componente
 import './assets/reset.css';
@@ -33,6 +34,7 @@ function App() {
           <About />
           <Skill />
           <Projects />
+          <Contacts />
         </div>
       </main>
       <Footer />

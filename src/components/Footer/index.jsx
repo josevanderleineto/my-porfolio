@@ -9,7 +9,7 @@ const Footer = () => {
     const { t } = useTranslation();
 
     return (
-        <FooterContainer id='contacts'>
+        <FooterContainer >
             <SocialIcon>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />
