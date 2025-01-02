@@ -45,3 +45,5 @@ $RECYCLE.BIN/
 
 # Vite
 .vite/
+
+.codegpt
