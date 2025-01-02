@@ -55,11 +55,11 @@ const Contacts = () => {
                     setFormData({ name: '', email: '', subject: '', message: '' }); // Limpa o formulário
                 } else {
                     console.log('Erro ao enviar o formulário', result);
-                    alert(t('contactForm.errorMessage'));
+                    alert(t('contactForm.errorMessageGeneral'));
                 }
             } catch (error) {
                 console.error('Erro na comunicação com a API', error);
-                alert(t('contactForm.errorMessage'));
+                alert(t('contactForm.errorMessageGeneral'));
             } finally {
                 setIsSubmitting(false); // Finaliza o processo de envio
             }
@@ -70,13 +70,13 @@ const Contacts = () => {
 
     return (
         <ContactsContainer id='contacts'>
-            <Title>{t('contactForm.title')}</Title>
+            <Title>{t('contactForm.title')}</Title> {/* Título do formulário */}
             <Form onSubmit={handleSubmit}>
                 <Label htmlFor='name'>{t('contactForm.labelName')}</Label>
                 <Input 
                     type='text' 
                     id='name' 
-                    placeholder={t('contactForm.name')} 
+                    placeholder={t('contactForm.placeholderName')} 
                     value={formData.name} 
                     onChange={handleInputChange} 
                 />
@@ -86,7 +86,7 @@ const Contacts = () => {
                 <Input 
                     type='email' 
                     id='email' 
-                    placeholder={t('contactForm.email')} 
+                    placeholder={t('contactForm.placeholderEmail')} 
                     value={formData.email} 
                     onChange={handleInputChange} 
                 />
@@ -96,7 +96,7 @@ const Contacts = () => {
                 <Input 
                     type='text' 
                     id='subject' 
-                    placeholder={t('contactForm.subject')} 
+                    placeholder={t('contactForm.placeholderSubject')} 
                     value={formData.subject} 
                     onChange={handleInputChange} 
                 />
@@ -105,7 +105,7 @@ const Contacts = () => {
                 <Label htmlFor='message'>{t('contactForm.labelMessage')}</Label>
                 <TextArea 
                     id='message' 
-                    placeholder={t('contactForm.message')} 
+                    placeholder={t('contactForm.placeholderMessage')} 
                     rows='4' 
                     value={formData.message} 
                     onChange={handleInputChange} 
@@ -113,7 +113,7 @@ const Contacts = () => {
                 {errors.message && <Error>{errors.message}</Error>}
 
                 <Button type='submit' disabled={isSubmitting}>
-                    {isSubmitting ? t('contactForm.sending') : t('contactForm.send')}
+                    {isSubmitting ? t('contactForm.sending') : t('contactForm.send')} {/* Tradução do botão */}
                 </Button>
             </Form>
         </ContactsContainer>
@@ -161,7 +161,6 @@ const TextArea = styled.textarea`
     border: 1px solid #ccc;
     border-radius: 4px;
     height: 12vh;
-    
 `;
 
 const Button = styled.button`
@@ -173,11 +172,8 @@ const Button = styled.button`
     cursor: pointer;
     font-size: 16px;
     
-
-
     &:hover {
         background-color:rgb(136, 243, 208);
-
     }
 
     &:disabled {

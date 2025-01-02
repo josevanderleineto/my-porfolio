@@ -90,19 +90,26 @@
     "viewCode": "Ver Código"
   },
 
-  
-    "contactForm": {
-      "title": "Contato",
-      "name": "Informe seu nome",
-      "labelName": "Nome",
-      "email": "Digite seu email",
-      "labelEmail": "Email",
-      "subject": "Informe o assunto",
-      "labelSubject": "Assunto",
-      "message": "Digite a mensagem",
-      "labelMessage": "Mensagem",
-      "send": "Enviar"
-    },
+  "contactForm": {
+    "title": "Contato",
+    "sending": "Enviando...",
+    "send": "Enviar",
+    "labelName": "Nome",
+    "labelEmail": "Email",
+    "labelSubject": "Assunto",
+    "labelMessage": "Mensagem",
+    "placeholderName": "Digite seu nome",
+    "placeholderEmail": "Digite seu email",
+    "placeholderSubject": "Digite o assunto",
+    "placeholderMessage": "Digite sua mensagem aqui...",
+    "errorName": "O nome é obrigatório.",
+    "errorEmail": "O email é obrigatório.",
+    "errorEmailFormat": "Digite um email válido.",
+    "errorSubject": "O assunto é obrigatório.",
+    "errorMessage": "A mensagem é obrigatória.",
+    "successMessage": "Sua mensagem foi enviada com sucesso!",
+    "errorMessageGeneral": "Ocorreu um erro ao enviar sua mensagem. Tente novamente."
+  },
   
   
 

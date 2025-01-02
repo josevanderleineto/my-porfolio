@@ -94,19 +94,26 @@
   
   },
 
-  
-    "contactForm": {
-      "title": "Contact",
-      "name": "Enter your name",
-      "labelName": "Name",
-      "email": "Enter your email",
-      "labelEmail": "Email",
-      "subject": "Enter the subject",
-      "labelSubject": "Subject",
-      "message": "Enter the message",
-      "labelMessage": "Message",
-      "send": "Send"
-    },
+  "contactForm": {
+    "title": "Contact",
+    "sending": "Sending...",
+    "send": "Send",
+    "labelName": "Name",
+    "labelEmail": "Email",
+    "labelSubject": "Subject",
+    "labelMessage": "Message",
+    "placeholderName": "Enter your name",
+    "placeholderEmail": "Enter your email",
+    "placeholderSubject": "Enter the subject",
+    "placeholderMessage": "Type your message here...",
+    "errorName": "Name is required.",
+    "errorEmail": "Email is required.",
+    "errorEmailFormat": "Enter a valid email address.",
+    "errorSubject": "Subject is required.",
+    "errorMessage": "Message is required.",
+    "successMessage": "Your message has been sent successfully!",
+    "errorMessageGeneral": "There was an error sending your message. Please try again."
+  },
 
   
 
